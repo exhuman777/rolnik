@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini gra o uprawie ziemi w Polsce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini gra o uprawie ziemi w Polsce</h1>
+    </header>
+    <div class="game-container">
+        <div class="field" id="farmField"></div>
+        <div class="buttons">
+            <button id="plantSeed">Zasiać Zboże</button>
+            <button id="harvestCrop" disabled>Zebrać Zboże</button>
+            <button id="newGame">Nowa gra</button>
+            <button id="buyHouse">Kup osadę (5 punktów)</button> <!-- Nowy przycisk -->
+        </div>
+        <div class="messages">
+            <h2>Spichlerz: <span id="storageAmount">0</span></h2>
+            <div id="eventMessage"></div>
+            <div id="loseMessage"></div>
+        </div>
+        <div class="houses-container">
+            <div id="houses">Osady: </div> <!-- Wyświetlanie osad -->
+        </div>
+    </div>
+    <ul class="rules"> <center>
+        <li>🌱 rośnie 1 sekundę</li>
+        <li>🌱 może być ☠️ lub 🌾</li>
+        <li>Za 🌾 masz +1 za ☠️ masz -2 punkty w Spichlerzu</li>
+        <li>Zbierz 10 punktów w Spichlerzu by wygrać.
+            <li>Za 5 punktów kup Osadę. Im więcej Osad tym lepiej.</li>
+        </li> <!-- Zmiana warunków wygranej i przegranej -->
+    </ul</center>
+    <script src="game.js"></script>
+</body>
+</html>
